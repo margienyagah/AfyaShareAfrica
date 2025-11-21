@@ -201,12 +201,75 @@
       <p>We’re beginning to engage hospitals, clinics and community organizations to accept AfyaPoints. Right now we are building our pilot partnerships — if you'd like to join as a partner, please get in touch.</p>
       <a class="btn btn-outline" href="#join">🤝 Contact Us</a>
 
-      <!-- Partner placeholder / trust -->
-      <div class="card" style="margin-top:18px">
-        <p class="muted small">Partners will be listed here once we complete onboarding and pilots.</p>
-      </div>
+      <!-- PARTNER ONBOARDING FORM (paste this inside #partners) -->
+<div class="partner-onboard card" style="margin-top:18px;">
+  <h3>Partner Onboarding</h3>
+  <p class="muted small">Interested in joining AfyaShare as a partner hospital, clinic, NGO or corporate partner? Fill the form and our partnerships team will contact you.</p>
+
+  <form id="partnerForm" class="partner-form" action="https://formspree.io/f/xldvrdww" method="POST" enctype="multipart/form-data" >
+    <!-- Basic contact -->
+    <label><span>Organization name</span>
+      <input type="text" name="organization" placeholder="e.g., Hope Clinic" required>
+    </label>
+
+    <label><span>Contact person</span>
+      <input type="text" name="contact_name" placeholder="Full name" required>
+    </label>
+
+    <label><span>Role / Position</span>
+      <input type="text" name="contact_role" placeholder="e.g., Head of Operations">
+    </label>
+
+    <label><span>Email</span>
+      <input type="email" name="email" placeholder="contact@example.com" required>
+    </label>
+
+    <label><span>Phone (optional)</span>
+      <input type="tel" name="phone" placeholder="+254 7XXXXXXXX">
+    </label>
+
+    <label><span>Type of partner</span>
+      <select name="partner_type" required>
+        <option value="">Select...</option>
+        <option>Hospital / Clinic</option>
+        <option>NGO / Community Group</option>
+        <option>Corporate / Employer</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label><span>Location</span>
+      <input type="text" name="location" placeholder="City, County, Country (e.g., Nairobi, Kenya)">
+    </label>
+
+    <label><span>Approx. beneficiaries / patients served (optional)</span>
+      <input type="text" name="beneficiaries" placeholder="e.g., 2,500/month">
+    </label>
+
+    <label><span>Short message — why you'd like to partner</span>
+      <textarea name="message" rows="4" placeholder="Tell us about your interest, capacity, or any questions"></textarea>
+    </label>
+
+    <!-- Optional file upload for MOUs / documents (Formspree supports file uploads) -->
+    <label><span>Attach a document (optional)</span>
+      <input type="file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg" />
+    </label>
+
+    <!-- Helpers for Formspree: subject + cc to support -->
+    <input type="hidden" name="_subject" value="AfyaShare partner onboarding request" />
+    <input type="hidden" name="_cc" value="support@afyashare.com" />
+    <!-- Optional: redirect to a thank-you page after success -->
+    <input type="hidden" name="_next" value="https://afyashare.africa/?partner=thanks" />
+
+    <div class="form-actions" style="margin-top:10px;">
+      <button type="submit" class="btn btn-primary">🤝 Request Partnership</button>
+      <button type="reset" class="btn btn-ghost">Reset</button>
     </div>
-  </section>
+
+    <p class="muted small" style="margin-top:8px;">Or email partnerships directly at <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
+  </form>
+</div>
+<!-- end partner onboarding form -->
 
   <!-- FAQ -->
   <section id="faq" class="section alt" aria-labelledby="faq-title">
@@ -492,6 +555,7 @@
 
 </body>
 </html>
+
 
 
 
