@@ -538,6 +538,20 @@
       alert('Thanks — your message was sent. We will be in touch via email.');
     }, 250);
   });
+    // Partner form friendly UX
+const partnerForm = document.getElementById('partnerForm');
+if (partnerForm) {
+  partnerForm.addEventListener('submit', function(e) {
+    // Let the browser submit; show friendly message
+    setTimeout(()=> {
+      // If page didn't redirect (no _next), show confirmation and reset
+      if (!window.location.search.includes('partner=thanks')) {
+        alert('Thanks — your partnership request was sent. Our team will contact you at the email you provided.');
+        partnerForm.reset();
+      }
+    }, 300);
+  });
+}
 
   // small animation load (fade in)
   document.addEventListener('DOMContentLoaded', ()=>{
@@ -555,6 +569,7 @@
 
 </body>
 </html>
+
 
 
 
