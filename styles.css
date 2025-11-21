@@ -211,6 +211,21 @@ body{
 .contact-form input:focus,
 .contact-form textarea:focus{box-shadow:0 6px 18px rgba(11,102,195,0.08); border-color:var(--blue-600)}
 .form-actions{display:flex; gap:12px; align-items:center}
+/* Partner onboarding form */
+.partner-onboard h3{ margin:0 0 8px 0; color:var(--blue-600) }
+.partner-form label{ display:block; margin:10px 0; }
+.partner-form input[type="text"],
+.partner-form input[type="email"],
+.partner-form input[type="tel"],
+.partner-form input[type="file"],
+.partner-form select,
+.partner-form textarea{
+  width:100%; padding:10px 12px; border-radius:8px; border:1px solid #e6eefc; background:#fff;
+}
+.partner-form input[type="file"]{ padding:6px; }
+.partner-form .form-actions{ display:flex; gap:12px; align-items:center; }
+.partner-onboard .muted a{ color:var(--blue-600) }
+
 
 /* wallet demo */
 .wallet-row{display:flex; gap:18px; align-items:flex-start; justify-content:space-between; flex-wrap:wrap}
@@ -261,4 +276,5 @@ body{
   .container{padding:22px}
   .hero-inner{flex-direction:column; align-items:flex-start}
 }
+
 
