@@ -4,28 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AfyaShare Africa — Community Health Wallet</title>
-  <meta name="description" content="AfyaShare Africa — community-powered health wallet. Save, share, and support healthcare with AfyaPoints (1 AfyaPoint = 1 KSh)." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="AfyaShare Africa — a community-powered health wallet. Save, share, and support healthcare with AfyaPoints. Join the waitlist." />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="AfyaShare Africa — Community Health Wallet">
+  <meta property="og:description" content="Save, share, and support healthcare with AfyaPoints. Join the movement to make healthcare affordable in Africa.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta property="og:url" content="https://afyashare.africa">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta name="theme-color" content="#0B66C3">
+
+  <!-- JSON-LD organisation -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"AfyaShare Africa",
+    "url":"https://afyashare.africa",
+    "logo":"https://afyashare.africa/logo.png",
+    "contactPoint":[{"@type":"ContactPoint","email":"support@afyashare.com","contactType":"customer support"}]
+  }
+  </script>
+  <!-- Optional: Google Analytics / Plausible - add your ID -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script> -->
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <rect rx="5" width="24" height="24" fill="#0B66C3"></rect>
-          <path d="M6 12c2-4 6-4 8 0-2 4-6 4-8 0z" fill="#fff"></path>
-        </svg>
+      <a class="brand" href="/" aria-label="AfyaShare Africa home">
+        <img src="/logo.png" alt="AfyaShare Africa logo" class="site-logo" />
         <span>AfyaShare Africa</span>
       </a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <a href="#what">What we do</a>
         <a href="#how">How it works</a>
         <a href="#points">AfyaPoints</a>
-        <a href="#partners">Partners</a>
+        <a href="#who">Who it's for</a>
         <a href="#join" class="btn btn-ghost">Join</a>
       </nav>
 
@@ -36,20 +57,21 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero" id="home" aria-labelledby="hero-heading">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1>Healthcare should never be a privilege.</h1>
-        <p class="lead">AfyaShare is Africa’s first community-powered health wallet — where families, churches, SACCOs, and organizations save, share, and support healthcare with AfyaPoints.</p>
+        <h1 id="hero-heading">Healthcare should never be a privilege.</h1>
+        <p class="lead">AfyaShare is Africa’s community-powered health wallet — where families, churches, SACCOs, and organisations save, share, and support healthcare with AfyaPoints.</p>
         <div class="hero-ctas">
           <a href="#join" class="btn btn-primary">Join the Movement</a>
           <a href="#points" class="btn btn-outline">Learn about AfyaPoints</a>
         </div>
+        <p class="micro">Join the waitlist — we’ll notify you when wallets open. No payment required to join.</p>
       </div>
 
       <div class="hero-art" aria-hidden="true">
-        <!-- Warm community illustration (replace with real image if you have one) -->
-        <svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Placeholder illustration -->
+        <svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Community helping each other illustration">
           <rect width="360" height="260" rx="16" fill="#E9F3FF"/>
           <g transform="translate(24,36)">
             <circle cx="60" cy="60" r="36" fill="#0B66C3" opacity="0.14"/>
@@ -63,50 +85,412 @@
   </section>
 
   <!-- WHAT WE DO -->
-  <section id="what" class="section">
+  <section id="what" class="section" aria-labelledby="what-title">
     <div class="container">
-      <h2 class="section-title">Making Healthcare Affordable, Transparent, and Shareable</h2>
+      <h2 id="what-title" class="section-title">Making Healthcare Affordable, Transparent, and Shareable</h2>
       <p class="section-lead">At AfyaShare Africa, we believe healthcare should be accessible to everyone — not just those who can afford expensive insurance.</p>
-      <p>We’re building a simple, digital health wallet that lets anyone contribute, save, or share AfyaPoints to pay for healthcare.</p>
-      <p>Whether you’re an individual, family, church group, SACCO, or company — you can join AfyaShare and make care possible for someone today.</p>
+      <p>We’re building a simple, digital health wallet that lets anyone contribute, save, or share AfyaPoints to pay for healthcare. Whether you’re an individual, family, church group, SACCO, or company — you can join AfyaShare and make care possible for someone today.</p>
       <p><a class="small-cta" href="#join">Join / Get Early Access →</a></p>
     </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section id="how" class="section alt">
-    <div class="container grid-3">
-      <div class="card icon-card">
-        <div class="icon">💾</div>
-        <h3>Save</h3>
-        <p>Save AfyaPoints in your wallet, just like digital airtime — they never expire.</p>
-        <a class="link-cta" href="#points">Learn more →</a>
+  <section id="how" class="section alt" aria-labelledby="how-title">
+    <div class="container">
+      <h2 id="how-title" class="section-title">How AfyaShare Works</h2>
+      <p class="section-lead">Three simple steps to save and share healthcare.</p>
+
+      <div class="grid-3 animate-grid" aria-hidden="false">
+        <div class="card icon-card">
+          <div class="icon" aria-hidden="true">💾</div>
+          <h3>Save</h3>
+          <p>Save AfyaPoints in your wallet — no expiry, no limits.</p>
+        </div>
+
+        <div class="card icon-card">
+          <div class="icon" aria-hidden="true">🔁</div>
+          <h3>Share</h3>
+          <p>Send AfyaPoints to a loved one or group member when they need medical care.</p>
+        </div>
+
+        <div class="card icon-card">
+          <div class="icon" aria-hidden="true">🏥</div>
+          <h3>Support</h3>
+          <p>Use AfyaPoints at partner hospitals or clinics — simple, transparent, and instant.</p>
+        </div>
       </div>
 
-      <div class="card icon-card">
-        <div class="icon">🔁</div>
-        <h3>Share</h3>
-        <p>Send AfyaPoints to a loved one or community member when they need medical care.</p>
-        <a class="link-cta" href="#join">Get early access →</a>
-      </div>
-
-      <div class="card icon-card">
-        <div class="icon">🏥</div>
-        <h3>Support</h3>
-        <p>Use AfyaPoints to pay directly at partner hospitals or clinics — simple, transparent, and instant.</p>
-        <a class="link-cta" href="#partners">Partner with us →</a>
-      </div>
+      <p class="muted small" style="margin-top:12px">Each step will feature clear guides and partner onboarding when the pilot launches.</p>
     </div>
   </section>
 
   <!-- AFYAPOINTS -->
-  <section id="points" class="section">
+  <section id="points" class="section" aria-labelledby="points-title">
     <div class="container split">
       <div>
-        <h2>What Are AfyaPoints?</h2>
-        <p>AfyaPoints are digital health credits that can be used to pay for healthcare services.</p>
+        <h2 id="points-title">What Are AfyaPoints?</h2>
+        <p>AfyaPoints are digital health credits that can be used to pay for healthcare services. You can buy, save, or share AfyaPoints anytime — they never expire.</p>
         <ul class="bullets">
-          <li><strong>1 AfyaPoint = 1 Kenya Shilling</strong> (initially — currency mapping can change later).</li>
+          <li><strong>Introductory reference rate:</strong> 1 AfyaPoint = 1 KES (Kenya Shilling).</li>
           <li>No expiry date — your savings stay safe.</li>
           <li>Fully transferable — give points to anyone in need.</li>
-          <l
+          <li>Transparent use — track every transaction.</li>
+        </ul>
+
+        <p class="example"><strong>Example:</strong> Save 1,000 AfyaPoints today. Help a neighbor use 500 tomorrow. Your care becomes someone’s hope.</p>
+
+        <p class="muted small">Note: This rate is an introductory reference for convenience and may be adjusted by community governance. Any change will be publicly announced at least 14 days before taking effect. Last updated: <strong id="rateDate">Nov 21, 2025</strong>.</p>
+
+        <a class="btn btn-primary" href="#join">Learn More & Join</a>
+      </div>
+
+      <div class="card points-card">
+        <div class="points-visual" aria-hidden="true">
+          <div class="coin">Afya</div>
+          <div class="coin-info">
+            <p class="muted">Starting reference</p>
+            <h3>1 AfyaPoint = 1 KES</h3>
+            <p class="muted small">Reference rate — may update with governance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section id="who" class="section alt" aria-labelledby="who-title">
+    <div class="container">
+      <h2 id="who-title">Built for Every Community</h2>
+      <p>AfyaShare is designed for everyone — because everyone deserves healthcare.</p>
+
+      <div class="grid-4 cards-small">
+        <div class="card small">
+          <div class="icon">👨‍👩‍👧</div>
+          <h4>Families & Individuals</h4>
+          <p>Save for future healthcare.</p>
+        </div>
+
+        <div class="card small">
+          <div class="icon">⛪</div>
+          <h4>Churches & SACCOs</h4>
+          <p>Create group wallets to support members.</p>
+        </div>
+
+        <div class="card small">
+          <div class="icon">💪</div>
+          <h4>Organizations</h4>
+          <p>Support employee health with a shared fund.</p>
+        </div>
+
+        <div class="card small">
+          <div class="icon">🌍</div>
+          <h4>Donors & Diaspora</h4>
+          <p>Send AfyaPoints home and track the impact.</p>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:12px">Together, we make healthcare accessible and affordable for everyone.</p>
+      <blockquote class="quote">“Together, we make care affordable — and dignity possible.”</blockquote>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section id="partners" class="section" aria-labelledby="partners-title">
+    <div class="container">
+      <h2 id="partners-title">Partner with AfyaShare</h2>
+      <p>We’re beginning to engage hospitals, clinics and community organizations to accept AfyaPoints. Right now we are building our pilot partnerships — if you'd like to join as a partner, please get in touch.</p>
+      <a class="btn btn-outline" href="#join">🤝 Contact Us</a>
+
+      <!-- Partner placeholder / trust -->
+      <div class="card" style="margin-top:18px">
+        <p class="muted small">Partners will be listed here once we complete onboarding and pilots.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title">FAQ</h2>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I get AfyaPoints?</button>
+        <div class="faq-a">Join our waitlist via the form below. When wallets open we’ll provide ways to buy or receive AfyaPoints (details will be announced).</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I convert AfyaPoints back to cash?</button>
+        <div class="faq-a">During the pilot, AfyaPoints are a digital credit to pay for healthcare with partner providers. Any convertibility or cash-out options will be clearly described in our terms and governance pages.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is AfyaPoint legal money?</button>
+        <div class="faq-a">AfyaPoints are community digital credits used within AfyaShare’s network. They are not legal tender. We will comply with applicable laws and publish our policies.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JOIN / CONTACT -->
+  <section id="join" class="section contact-section" aria-labelledby="join-title">
+    <div class="container split">
+      <div>
+        <h2 id="join-title">Join the AfyaShare Movement</h2>
+        <p>Subscribe for updates or join our pilot program. We’ll contact early supporters and partners first.</p>
+        <ul class="bullets">
+          <li>Early access for supporters</li>
+          <li>Partner onboarding for health facilities</li>
+          <li>Transparent reporting for donors</li>
+        </ul>
+
+        <h3 style="margin-top:18px">For Donors & Diaspora</h3>
+        <p>Send AfyaPoints to family or community wallets and track your impact. A smarter, transparent way to support healthcare back home.</p>
+        <ul class="bullets">
+          <li>Track usage of points</li>
+          <li>Support specific families or community funds</li>
+          <li>Donor reporting and impact updates</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpwbvdan" method="POST">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required placeholder="Your full name" aria-label="Name">
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required placeholder="you@example.com" aria-label="Email">
+        </label>
+
+        <label>
+          <span>Message — How would you like to get involved?</span>
+          <textarea name="message" rows="4" placeholder="Tell us how you'd like to join or partner" aria-label="Message"></textarea>
+        </label>
+
+        <input type="hidden" name="_subject" value="AfyaShare sign-up" />
+        <input type="hidden" name="_cc" value="support@afyashare.com" />
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">💙 Send Message</button>
+          <button type="reset" class="btn btn-ghost">Clear</button>
+        </div>
+
+        <p class="disclaimer small muted">Or email us directly at <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- DEMO WALLET -->
+  <section id="demo" class="section" aria-labelledby="demo-title">
+    <div class="container">
+      <h2 id="demo-title">Interactive Demo Wallet (Client-side)</h2>
+      <p class="section-lead">Try a safe demo: add AfyaPoints, send to someone, and see the transaction history. This is a local demo stored in your browser and not real money.</p>
+
+      <div class="card">
+        <div class="wallet-row">
+          <div>
+            <p class="muted">Balance</p>
+            <h3 id="demoBalance">0 AfyaPoints</h3>
+          </div>
+
+          <div>
+            <label>
+              <span>Add points (simulate purchase)</span>
+              <input id="addAmount" type="number" min="1" placeholder="1000">
+            </label>
+            <button id="addBtn" class="btn btn-primary">Add Points</button>
+          </div>
+        </div>
+
+        <hr style="margin:18px 0">
+
+        <div class="wallet-row">
+          <div style="flex:1">
+            <label>
+              <span>Send to (name)</span>
+              <input id="sendTo" type="text" placeholder="Recipient name">
+            </label>
+            <label>
+              <span>Amount</span>
+              <input id="sendAmount" type="number" min="1" placeholder="500">
+            </label>
+            <div style="margin-top:8px">
+              <button id="sendBtn" class="btn btn-outline">Send Points</button>
+            </div>
+          </div>
+
+          <div style="width:320px">
+            <p class="muted">Transactions (local demo)</p>
+            <div id="txList" class="tx-list" aria-live="polite"></div>
+            <button id="clearDemo" class="btn btn-ghost" style="margin-top:8px">Clear Demo Data</button>
+          </div>
+        </div>
+      </div>
+      <p class="muted small" style="margin-top:8px">Demo stores data locally in your browser (localStorage) and is for demonstration only.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <p>© 2025 AfyaShare Africa. All rights reserved.</p>
+        <p class="muted small">AfyaShare is a community initiative under development to make healthcare transparent and accessible.</p>
+      </div>
+
+      <div>
+        <p class="muted">Contact: <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/109761755" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+        <div style="margin-top:8px">
+          <a href="#privacy" class="small-cta">Privacy</a> · <a href="#terms" class="small-cta">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INLINE PRIVACY & TERMS (simple modals / sections) -->
+  <div id="privacy" class="drawer">
+    <div class="drawer-inner">
+      <button class="drawer-close" data-close>Close</button>
+      <h2>Privacy — AfyaShare Africa</h2>
+      <p>We collect only the data you provide in forms (name, email, message) to contact you. We will not sell personal data. As we build the platform we will publish a full privacy policy. Contact: <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
+    </div>
+  </div>
+
+  <div id="terms" class="drawer">
+    <div class="drawer-inner">
+      <button class="drawer-close" data-close>Close</button>
+      <h2>Terms — AfyaShare Africa (Summary)</h2>
+      <p>AfyaPoints are community digital credits used to pay for healthcare within participating partners. They are not legal tender. Full terms will be published as the platform launches. Contact: <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+  // NAV TOGGLE
+  (function() {
+    const nav = document.getElementById('nav');
+    const btn = document.getElementById('navToggle');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', ()=> {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !expanded);
+      btn.classList.toggle('open');
+      const a = btn.nextElementSibling;
+      if (!a) return;
+      if (a.style.maxHeight) { a.style.maxHeight = null; } else { a.style.maxHeight = a.scrollHeight + 'px'; }
+    });
+  });
+
+  // Drawer links for privacy/terms
+  document.querySelectorAll('a[href^="#privacy"], a[href^="#terms"]').forEach(a=>{
+    a.addEventListener('click', (e)=>{
+      e.preventDefault();
+      const id = a.getAttribute('href').slice(1);
+      const d = document.getElementById(id);
+      if (d) d.classList.add('open');
+    });
+  });
+  document.querySelectorAll('.drawer-close').forEach(b => b.addEventListener('click', ()=>{
+    b.closest('.drawer').classList.remove('open');
+  }));
+
+  // DEMO WALLET (client-side, localStorage)
+  const demo = (function(){
+    const BAL_KEY = 'afyashare_demo_balance';
+    const TX_KEY = 'afyashare_demo_txs';
+
+    function getBalance(){ return Number(localStorage.getItem(BAL_KEY) || 0); }
+    function setBalance(v){ localStorage.setItem(BAL_KEY, String(v)); render(); }
+    function getTxs(){ return JSON.parse(localStorage.getItem(TX_KEY) || '[]'); }
+    function pushTx(tx){
+      const txs = getTxs();
+      tx.time = new Date().toISOString();
+      txs.unshift(tx);
+      localStorage.setItem(TX_KEY, JSON.stringify(txs));
+      render();
+    }
+
+    // render UI
+    function render(){
+      document.getElementById('demoBalance').textContent = getBalance() + ' AfyaPoints';
+      const txList = document.getElementById('txList');
+      txList.innerHTML = '';
+      const txs = getTxs();
+      if (txs.length === 0) txList.innerHTML = '<p class="muted small">No transactions yet.</p>';
+      txs.slice(0,10).forEach(t=>{
+        const el = document.createElement('div');
+        el.className = 'tx';
+        el.innerHTML = '<div><strong>'+ (t.type === 'add' ? '+' : '-') + t.amount +'</strong> AfyaPoints</div><div class="muted small">'+ (t.type === 'send' ? 'To: '+t.to : 'Added') + ' • ' + new Date(t.time).toLocaleString() + '</div>';
+        txList.appendChild(el);
+      });
+    }
+
+    // actions
+    document.getElementById('addBtn').addEventListener('click', ()=>{
+      const v = Number(document.getElementById('addAmount').value || 0);
+      if (!v || v <= 0){ alert('Enter a positive amount'); return; }
+      setBalance(getBalance() + v);
+      pushTx({type:'add', amount: v});
+      document.getElementById('addAmount').value = '';
+    });
+
+    document.getElementById('sendBtn').addEventListener('click', ()=>{
+      const to = document.getElementById('sendTo').value.trim();
+      const amt = Number(document.getElementById('sendAmount').value || 0);
+      if (!to){ alert('Enter recipient name'); return; }
+      if (!amt || amt <= 0){ alert('Enter an amount greater than 0'); return; }
+      if (amt > getBalance()){ alert('Insufficient balance'); return; }
+      setBalance(getBalance() - amt);
+      pushTx({type:'send', amount: amt, to});
+      document.getElementById('sendTo').value = '';
+      document.getElementById('sendAmount').value = '';
+    });
+
+    document.getElementById('clearDemo').addEventListener('click', ()=>{
+      if (!confirm('Clear demo data?')) return;
+      localStorage.removeItem(BAL_KEY);
+      localStorage.removeItem(TX_KEY);
+      render();
+    });
+
+    // initial render
+    render();
+    return { getBalance, getTxs, pushTx };
+  })();
+
+  // Form UX: friendly confirmation after submit
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    // Let Formspree handle the POST; show a brief message
+    setTimeout(()=> {
+      alert('Thanks — your message was sent. We will be in touch via email.');
+    }, 250);
+  });
+
+  // small animation load (fade in)
+  document.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelectorAll('.animate-grid .card').forEach((el,i)=>{ el.style.transitionDelay = (i*80)+'ms'; el.classList.add('appear'); });
+  });
+  </script>
+
+  <style>
+    /* Minimal styles for drawers (inline so file drop-in works) */
+    .drawer{ position:fixed; inset:0; display:none; background: rgba(2,6,23,0.6); z-index:1000; align-items:center; justify-content:center; padding:20px; }
+    .drawer.open{ display:flex; }
+    .drawer-inner{ width:min(800px,100%); max-height:90vh; overflow:auto; background:#fff; border-radius:12px; padding:20px; position:relative; }
+    .drawer-close{ position:absolute; right:12px; top:12px; background:transparent; border:0; cursor:pointer; font-weight:700; }
+  </style>
+
+</body>
+</html>
+
+
