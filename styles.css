@@ -5,15 +5,37 @@
    =========================================================== */
 
 :root{
-  --blue-600: #0B66C3;
-  --blue-500: #1680E0;
-  --bg: #ffffff;
-  --muted: #6b7280;
-  --card: #f8fbff;
-  --radius: 12px;
-  --maxwidth: 1100px;
-  --gap: 24px;
-  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+/* Brand Colors */
+
+--primary:#1680E0;
+--primary-dark:#0B66C3;
+--secondary:#123B73;
+
+--accent:#F4B942;
+
+/* Text */
+
+--text:#263238;
+--text-light:#6B7280;
+
+/* Background */
+
+--background:#FFFFFF;
+--section:#F8FBFF;
+--border:#E4ECF5;
+
+/* Layout */
+
+--radius:16px;
+--max-width:1200px;
+
+/* Effects */
+
+--shadow:0 12px 35px rgba(11,102,195,.08);
+
+--transition:.35s ease;
+
 }
 /* ==========================
 RESET
