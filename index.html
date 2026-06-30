@@ -1,575 +1,893 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>AfyaShare Africa — Community Health Wallet</title>
-  <meta name="description" content="AfyaShare Africa — a community-powered health wallet. Save, share, and support healthcare with AfyaPoints. Join the waitlist." />
 
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="AfyaShare Africa — Community Health Wallet">
-  <meta property="og:description" content="Save, share, and support healthcare with AfyaPoints. Join the movement to make healthcare affordable in Africa.">
-  <meta property="og:image" content="/assets/og-image.png">
-  <meta property="og:url" content="https://afyashare.africa">
-  <meta name="twitter:card" content="summary_large_image">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.png" type="image/png" />
+<title>AfyaShare Africa | Community-Powered Healthcare Preparedness</title>
 
-  <!-- Fonts & CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta name="description"
+content="AfyaShare Africa is building a community-powered health financing model that helps churches, chamas, employers and families prepare for healthcare before illness occurs.">
 
-  <!-- JSON-LD organisation -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"AfyaShare Africa",
-    "url":"https://afyashare.africa",
-    "logo":"https://afyashare.africa/logo.png",
-    "contactPoint":[{"@type":"ContactPoint","email":"support@afyashareafrica.com","contactType":"customer support"}]
-  }
-  </script>
-  <!-- Optional: Google Analytics / Plausible - add your ID -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-  <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="AfyaShare Africa home">
-        <img src="/logo.png" alt="AfyaShare Africa logo" class="site-logo" />
-        <span>AfyaShare Africa</span>
-      </a>
 
-      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
-        <a href="#what">What we do</a>
-        <a href="#how">How it works</a>
-        <a href="#points">AfyaPoints</a>
-        <a href="#who">Who it's for</a>
-        <a href="#join" class="btn btn-ghost">Join</a>
-      </nav>
+<header>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span class="bars"></span>
-      </button>
-    </div>
-  </header>
+<nav class="navbar">
 
-  <!-- HERO -->
-  <section class="hero" id="home" aria-labelledby="hero-heading">
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1 id="hero-heading">AfyaShare Africa: Community-Powered Healthcare for All.</h1>
-        <p class="lead">AfyaShare is a digital community health wallet that enables individuals, families, and organizations to save, share, and pay for healthcare through transparent digital credits called AfyaPoints.</p>
-        <div class="hero-ctas">
-          <a href="#join" class="btn btn-primary">Join the Movement</a>
-          <a href="#points" class="btn btn-outline">Learn about AfyaPoints</a>
-        </div>
-        <p class="micro">Join the waitlist — we’ll notify you when wallets open. No payment required to join.</p>
-      </div>
+<div class="logo">
 
-      <div class="hero-art" aria-hidden="true">
-        <!-- Placeholder illustration -->
-        <svg width="360" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Community helping each other illustration">
-          <rect width="360" height="260" rx="16" fill="#E9F3FF"/>
-          <g transform="translate(24,36)">
-            <circle cx="60" cy="60" r="36" fill="#0B66C3" opacity="0.14"/>
-            <rect x="120" y="20" width="160" height="120" rx="12" fill="#fff"/>
-            <path d="M18 170c30-28 70-28 100 0" stroke="#0B66C3" stroke-width="10" stroke-linecap="round" opacity="0.12"/>
-            <text x="128" y="84" fill="#0B66C3" font-family="Poppins, sans-serif" font-size="18" font-weight="600">Community</text>
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
+<img src="images/logo.png" alt="AfyaShare Africa">
 
-  <!-- WHAT WE DO -->
-  <section id="what" class="section" aria-labelledby="what-title">
-    <div class="container">
-      <h2 id="what-title" class="section-title">Making Healthcare Affordable, Transparent, and Shareable</h2>
-      <p class="section-lead">At AfyaShare Africa, we believe healthcare should be accessible to everyone — not just those who can afford expensive insurance.</p>
-      <p>We’re building a simple, digital health wallet that lets anyone contribute, save, or share AfyaPoints to pay for healthcare. Whether you’re an individual, family, church group, SACCO, or company — you can join AfyaShare and make care possible for someone today.</p>
-      <p><a class="small-cta" href="#join">Join / Get Early Access →</a></p>
-    </div>
-  </section>
+<span>AfyaShare Africa</span>
 
-  <!-- HOW IT WORKS -->
-  <section id="how" class="section alt" aria-labelledby="how-title">
-    <div class="container">
-      <h2 id="how-title" class="section-title">How AfyaShare Works</h2>
-      <p class="section-lead">Three simple steps to save and share healthcare.</p>
-
-      <div class="grid-3 animate-grid" aria-hidden="false">
-        <div class="card icon-card">
-          <div class="icon" aria-hidden="true">💾</div>
-          <h3>Save</h3>
-          <p>Save AfyaPoints in your wallet — no expiry, no limits.</p>
-        </div>
-
-        <div class="card icon-card">
-          <div class="icon" aria-hidden="true">🔁</div>
-          <h3>Share</h3>
-          <p>Send AfyaPoints to a loved one or group member when they need medical care.</p>
-        </div>
-
-        <div class="card icon-card">
-          <div class="icon" aria-hidden="true">🏥</div>
-          <h3>Support</h3>
-          <p>Use AfyaPoints at partner hospitals or clinics — simple, transparent, and instant.</p>
-        </div>
-      </div>
-
-      <p class="muted small" style="margin-top:12px">Each step will feature clear guides and partner onboarding when the pilot launches.</p>
-    </div>
-  </section>
-
-  <!-- AFYAPOINTS -->
-  <section id="points" class="section" aria-labelledby="points-title">
-    <div class="container split">
-      <div>
-        <h2 id="points-title">What Are AfyaPoints?</h2>
-        <p>AfyaPoints are digital health credits that can be used to pay for healthcare services. You can buy, save, or share AfyaPoints anytime — they never expire.</p>
-        <ul class="bullets">
-          <li><strong>Introductory reference rate:</strong> 1 AfyaPoint = 1 KES (Kenya Shilling).</li>
-          <li>No expiry date — your savings stay safe.</li>
-          <li>Fully transferable — give points to anyone in need.</li>
-          <li>Transparent use — track every transaction.</li>
-        </ul>
-
-        <p class="example"><strong>Example:</strong> Save 1,000 AfyaPoints today. Help a neighbor use 500 tomorrow. Your care becomes someone’s hope.</p>
-
-        <p class="muted small">Note: This rate is an introductory reference for convenience and may be adjusted by community governance. Any change will be publicly announced at least 14 days before taking effect. Last updated: <strong id="rateDate">Nov 21, 2025</strong>.</p>
-
-        <a class="btn btn-primary" href="#join">Learn More & Join</a>
-      </div>
-
-      <div class="card points-card">
-        <div class="points-visual" aria-hidden="true">
-          <div class="coin">Afya</div>
-          <div class="coin-info">
-            <p class="muted">Starting reference</p>
-            <h3>1 AfyaPoint = 1 KES</h3>
-            <p class="muted small">Reference rate — may update with governance.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHO IT'S FOR -->
-  <section id="who" class="section alt" aria-labelledby="who-title">
-    <div class="container">
-      <h2 id="who-title">Built for Every Community</h2>
-      <p>AfyaShare is designed for everyone — because everyone deserves healthcare.</p>
-
-      <div class="grid-4 cards-small">
-        <div class="card small">
-          <div class="icon">👨‍👩‍👧</div>
-          <h4>Families & Individuals</h4>
-          <p>Save for future healthcare.</p>
-        </div>
-
-        <div class="card small">
-          <div class="icon">⛪</div>
-          <h4>Churches & SACCOs</h4>
-          <p>Create group wallets to support members.</p>
-        </div>
-
-        <div class="card small">
-          <div class="icon">💪</div>
-          <h4>Organizations</h4>
-          <p>Support employee health with a shared fund.</p>
-        </div>
-
-        <div class="card small">
-          <div class="icon">🌍</div>
-          <h4>Donors & Diaspora</h4>
-          <p>Send AfyaPoints home and track the impact.</p>
-        </div>
-      </div>
-
-      <p class="muted" style="margin-top:12px">Together, we make healthcare accessible and affordable for everyone.</p>
-      <blockquote class="quote">“Together, we make care affordable — and dignity possible.”</blockquote>
-    </div>
-  </section>
-
-  <!-- PARTNERS -->
-  <section id="partners" class="section" aria-labelledby="partners-title">
-    <div class="container">
-      <h2 id="partners-title">Partner with AfyaShare</h2>
-      <p>We’re beginning to engage hospitals, clinics and community organizations to accept AfyaPoints. Right now we are building our pilot partnerships — if you'd like to join as a partner, please get in touch.</p>
-      <a class="btn btn-outline" href="#join">🤝 Contact Us</a>
-
-      <!-- PARTNER ONBOARDING FORM (paste this inside #partners) -->
-<div class="partner-onboard card" style="margin-top:18px;">
-  <h3>Partner Onboarding</h3>
-  <p class="muted small">Interested in joining AfyaShare as a partner hospital, clinic, NGO or corporate partner? Fill the form and our partnerships team will contact you.</p>
-
-  <form id="partnerForm" class="partner-form" action="https://formspree.io/f/xldvrdww" method="POST" enctype="multipart/form-data" >
-    <!-- Basic contact -->
-    <label><span>Organization name</span>
-      <input type="text" name="organization" placeholder="e.g., Hope Clinic" required>
-    </label>
-
-    <label><span>Contact person</span>
-      <input type="text" name="contact_name" placeholder="Full name" required>
-    </label>
-
-    <label><span>Role / Position</span>
-      <input type="text" name="contact_role" placeholder="e.g., Head of Operations">
-    </label>
-
-    <label><span>Email</span>
-      <input type="email" name="email" placeholder="contact@example.com" required>
-    </label>
-
-    <label><span>Phone (optional)</span>
-      <input type="tel" name="phone" placeholder="+254 7XXXXXXXX">
-    </label>
-
-    <label><span>Type of partner</span>
-      <select name="partner_type" required>
-        <option value="">Select...</option>
-        <option>Hospital / Clinic</option>
-        <option>NGO / Community Group</option>
-        <option>Corporate / Employer</option>
-        <option>Other</option>
-      </select>
-    </label>
-
-    <label><span>Location</span>
-      <input type="text" name="location" placeholder="City, County, Country (e.g., Nairobi, Kenya)">
-    </label>
-
-    <label><span>Approx. beneficiaries / patients served (optional)</span>
-      <input type="text" name="beneficiaries" placeholder="e.g., 2,500/month">
-    </label>
-
-    <label><span>Short message — why you'd like to partner</span>
-      <textarea name="message" rows="4" placeholder="Tell us about your interest, capacity, or any questions"></textarea>
-    </label>
-
-    <!-- Optional file upload for MOUs / documents (Formspree supports file uploads) -->
-    <label><span>Attach a document (optional)</span>
-      <input type="file" name="attachment" accept=".pdf,.doc,.docx,.png,.jpg" />
-    </label>
-
-    <!-- Helpers for Formspree: subject + cc to support -->
-    <input type="hidden" name="_subject" value="AfyaShare partner onboarding request" />
-    <input type="hidden" name="_cc" value="support@afyashareafrica.com" />
-    <!-- Optional: redirect to a thank-you page after success -->
-    <input type="hidden" name="_next" value="https://afyashare.africa/?partner=thanks" />
-
-    <div class="form-actions" style="margin-top:10px;">
-      <button type="submit" class="btn btn-primary">🤝 Request Partnership</button>
-      <button type="reset" class="btn btn-ghost">Reset</button>
-    </div>
-
-    <p class="muted small" style="margin-top:8px;">Or email partnerships directly at <a href="mailto:support@afyashareafrica.com">support@afyashareafrica.com</a></p>
-  </form>
 </div>
-<!-- end partner onboarding form -->
 
-  <!-- FAQ -->
-  <section id="faq" class="section alt" aria-labelledby="faq-title">
-    <div class="container">
-      <h2 id="faq-title">FAQ</h2>
+<ul class="nav-links">
 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">How do I get AfyaPoints?</button>
-        <div class="faq-a">Join our waitlist via the form below. When wallets open we’ll provide ways to buy or receive AfyaPoints (details will be announced).</div>
-      </div>
+<li><a href="#problem">The Problem</a></li>
 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Can I convert AfyaPoints back to cash?</button>
-        <div class="faq-a">During the pilot, AfyaPoints are a digital credit to pay for healthcare with partner providers. Any convertibility or cash-out options will be clearly described in our terms and governance pages.</div>
-      </div>
+<li><a href="#solution">Our Solution</a></li>
 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Is AfyaPoint legal money?</button>
-        <div class="faq-a">AfyaPoints are community digital credits used within AfyaShare’s network. They are not legal tender. We will comply with applicable laws and publish our policies.</div>
-      </div>
+<li><a href="#communities">Communities</a></li>
 
-    </div>
-  </section>
+<li><a href="#partners">Partners</a></li>
 
-  <!-- JOIN / CONTACT -->
-  <section id="join" class="section contact-section" aria-labelledby="join-title">
-    <div class="container split">
-      <div>
-        <h2 id="join-title">Join the AfyaShare Movement</h2>
-        <p>Subscribe for updates or join our pilot program. We’ll contact early supporters and partners first.</p>
-        <ul class="bullets">
-          <li>Early access for supporters</li>
-          <li>Partner onboarding for health facilities</li>
-          <li>Transparent reporting for donors</li>
-        </ul>
+<li><a href="#waitlist">Join Pilot</a></li>
 
-        <h3 style="margin-top:18px">For Donors & Diaspora</h3>
-        <p>Send AfyaPoints to family or community wallets and track your impact. A smarter, transparent way to support healthcare back home.</p>
-        <ul class="bullets">
-          <li>Track usage of points</li>
-          <li>Support specific families or community funds</li>
-          <li>Donor reporting and impact updates</li>
-        </ul>
-      </div>
+</ul>
 
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpwbvdan" method="POST">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" required placeholder="Your full name" aria-label="Name">
-        </label>
+<a href="#waitlist" class="btn-nav">Join Waitlist</a>
 
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" required placeholder="you@example.com" aria-label="Email">
-        </label>
+</nav>
 
-        <label>
-          <span>Message — How would you like to get involved?</span>
-          <textarea name="message" rows="4" placeholder="Tell us how you'd like to join or partner" aria-label="Message"></textarea>
-        </label>
+</header>
 
-        <input type="hidden" name="_subject" value="AfyaShare sign-up" />
-        <input type="hidden" name="_cc" value="support@afyashareafrica.com" />
+<!-- HERO -->
 
-        <div class="form-actions">
-          <button type="submit" class="btn btn-primary">💙 Send Message</button>
-          <button type="reset" class="btn btn-ghost">Clear</button>
-        </div>
+<section class="hero">
 
-        <p class="disclaimer small muted">Or email us directly at <a href="mailto:support@afyashareafrica.com">support@afyashareafrica.com</a></p>
-      </form>
-    </div>
-  </section>
+<div class="hero-content">
 
-  <!-- DEMO WALLET -->
-  <section id="demo" class="section" aria-labelledby="demo-title">
-    <div class="container">
-      <h2 id="demo-title">Interactive Demo Wallet (Client-side)</h2>
-      <p class="section-lead">Try a safe demo: add AfyaPoints, send to someone, and see the transaction history. This is a local demo stored in your browser and not real money.</p>
+<span class="tagline">
 
-      <div class="card">
-        <div class="wallet-row">
-          <div>
-            <p class="muted">Balance</p>
-            <h3 id="demoBalance">0 AfyaPoints</h3>
-          </div>
+Building Africa's first scalable community health wallet
 
-          <div>
-            <label>
-              <span>Add points (simulate purchase)</span>
-              <input id="addAmount" type="number" min="1" placeholder="1000">
-            </label>
-            <button id="addBtn" class="btn btn-primary">Add Points</button>
-          </div>
-        </div>
+</span>
 
-        <hr style="margin:18px 0">
+<h1>
 
-        <div class="wallet-row">
-          <div style="flex:1">
-            <label>
-              <span>Send to (name)</span>
-              <input id="sendTo" type="text" placeholder="Recipient name">
-            </label>
-            <label>
-              <span>Amount</span>
-              <input id="sendAmount" type="number" min="1" placeholder="500">
-            </label>
-            <div style="margin-top:8px">
-              <button id="sendBtn" class="btn btn-outline">Send Points</button>
-            </div>
-          </div>
+No family should delay treatment because they couldn't raise money in time.
 
-          <div style="width:320px">
-            <p class="muted">Transactions (local demo)</p>
-            <div id="txList" class="tx-list" aria-live="polite"></div>
-            <button id="clearDemo" class="btn btn-ghost" style="margin-top:8px">Clear Demo Data</button>
-          </div>
-        </div>
-      </div>
-      <p class="muted small" style="margin-top:8px">Demo stores data locally in your browser (localStorage) and is for demonstration only.</p>
-    </div>
-  </section>
+</h1>
 
-  <!-- FOOTER -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div>
-        <p>© 2025 AfyaShare Africa. All rights reserved.</p>
-        <p class="muted small">AfyaShare is a community initiative under development to make healthcare transparent and accessible.</p>
-      </div>
+<p>
 
-      <div>
-        <p class="muted">Contact: <a href="mailto:support@afyashareafrica.com">support@afyashareafrica.com</a></p>
-        <div class="social">
-          <a href="https://www.linkedin.com/company/109761755" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </div>
-        <div style="margin-top:8px">
-          <a href="#privacy" class="small-cta">Privacy</a> · <a href="#terms" class="small-cta">Terms</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+AfyaShare Africa is developing a community-powered healthcare financing model that enables churches, chamas, employers and families to prepare for healthcare before illness occurs.
 
-  <!-- INLINE PRIVACY & TERMS (simple modals / sections) -->
-  <div id="privacy" class="drawer">
-    <div class="drawer-inner">
-      <button class="drawer-close" data-close>Close</button>
-      <h2>Privacy — AfyaShare Africa</h2>
-      <p>We collect only the data you provide in forms (name, email, message) to contact you. We will not sell personal data. As we build the platform we will publish a full privacy policy. Contact: <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
-    </div>
-  </div>
+Instead of waiting for emergencies to trigger fundraising, communities contribute gradually into dedicated health wallets that can support members when care is needed.
 
-  <div id="terms" class="drawer">
-    <div class="drawer-inner">
-      <button class="drawer-close" data-close>Close</button>
-      <h2>Terms — AfyaShare Africa (Summary)</h2>
-      <p>AfyaPoints are community digital credits used to pay for healthcare within participating partners. They are not legal tender. Full terms will be published as the platform launches. Contact: <a href="mailto:support@afyashare.com">support@afyashare.com</a></p>
-    </div>
-  </div>
+</p>
 
-  <!-- Scripts -->
-  <script>
-  // NAV TOGGLE
-  (function() {
-    const nav = document.getElementById('nav');
-    const btn = document.getElementById('navToggle');
-    btn.addEventListener('click', () => nav.classList.toggle('open'));
-  })();
+<div class="hero-buttons">
 
-  // FAQ accordion
-  document.querySelectorAll('.faq-q').forEach(btn => {
-    btn.addEventListener('click', ()=> {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', !expanded);
-      btn.classList.toggle('open');
-      const a = btn.nextElementSibling;
-      if (!a) return;
-      if (a.style.maxHeight) { a.style.maxHeight = null; } else { a.style.maxHeight = a.scrollHeight + 'px'; }
-    });
-  });
+<a href="#waitlist" class="primary-btn">
 
-  // Drawer links for privacy/terms
-  document.querySelectorAll('a[href^="#privacy"], a[href^="#terms"]').forEach(a=>{
-    a.addEventListener('click', (e)=>{
-      e.preventDefault();
-      const id = a.getAttribute('href').slice(1);
-      const d = document.getElementById(id);
-      if (d) d.classList.add('open');
-    });
-  });
-  document.querySelectorAll('.drawer-close').forEach(b => b.addEventListener('click', ()=>{
-    b.closest('.drawer').classList.remove('open');
-  }));
+Join the Pilot
 
-  // DEMO WALLET (client-side, localStorage)
-  const demo = (function(){
-    const BAL_KEY = 'afyashare_demo_balance';
-    const TX_KEY = 'afyashare_demo_txs';
+</a>
 
-    function getBalance(){ return Number(localStorage.getItem(BAL_KEY) || 0); }
-    function setBalance(v){ localStorage.setItem(BAL_KEY, String(v)); render(); }
-    function getTxs(){ return JSON.parse(localStorage.getItem(TX_KEY) || '[]'); }
-    function pushTx(tx){
-      const txs = getTxs();
-      tx.time = new Date().toISOString();
-      txs.unshift(tx);
-      localStorage.setItem(TX_KEY, JSON.stringify(txs));
-      render();
-    }
+<a href="#solution" class="secondary-btn">
 
-    // render UI
-    function render(){
-      document.getElementById('demoBalance').textContent = getBalance() + ' AfyaPoints';
-      const txList = document.getElementById('txList');
-      txList.innerHTML = '';
-      const txs = getTxs();
-      if (txs.length === 0) txList.innerHTML = '<p class="muted small">No transactions yet.</p>';
-      txs.slice(0,10).forEach(t=>{
-        const el = document.createElement('div');
-        el.className = 'tx';
-        el.innerHTML = '<div><strong>'+ (t.type === 'add' ? '+' : '-') + t.amount +'</strong> AfyaPoints</div><div class="muted small">'+ (t.type === 'send' ? 'To: '+t.to : 'Added') + ' • ' + new Date(t.time).toLocaleString() + '</div>';
-        txList.appendChild(el);
-      });
-    }
+Learn More
 
-    // actions
-    document.getElementById('addBtn').addEventListener('click', ()=>{
-      const v = Number(document.getElementById('addAmount').value || 0);
-      if (!v || v <= 0){ alert('Enter a positive amount'); return; }
-      setBalance(getBalance() + v);
-      pushTx({type:'add', amount: v});
-      document.getElementById('addAmount').value = '';
-    });
+</a>
 
-    document.getElementById('sendBtn').addEventListener('click', ()=>{
-      const to = document.getElementById('sendTo').value.trim();
-      const amt = Number(document.getElementById('sendAmount').value || 0);
-      if (!to){ alert('Enter recipient name'); return; }
-      if (!amt || amt <= 0){ alert('Enter an amount greater than 0'); return; }
-      if (amt > getBalance()){ alert('Insufficient balance'); return; }
-      setBalance(getBalance() - amt);
-      pushTx({type:'send', amount: amt, to});
-      document.getElementById('sendTo').value = '';
-      document.getElementById('sendAmount').value = '';
-    });
+</div>
 
-    document.getElementById('clearDemo').addEventListener('click', ()=>{
-      if (!confirm('Clear demo data?')) return;
-      localStorage.removeItem(BAL_KEY);
-      localStorage.removeItem(TX_KEY);
-      render();
-    });
+<div class="hero-stats">
 
-    // initial render
-    render();
-    return { getBalance, getTxs, pushTx };
-  })();
+<div>
 
-  // Form UX: friendly confirmation after submit
-  document.getElementById('contactForm').addEventListener('submit', function(e){
-    // Let Formspree handle the POST; show a brief message
-    setTimeout(()=> {
-      alert('Thanks — your message was sent. We will be in touch via email.');
-    }, 250);
-  });
-    // Partner form friendly UX
-const partnerForm = document.getElementById('partnerForm');
-if (partnerForm) {
-  partnerForm.addEventListener('submit', function(e) {
-    // Let the browser submit; show friendly message
-    setTimeout(()=> {
-      // If page didn't redirect (no _next), show confirmation and reset
-      if (!window.location.search.includes('partner=thanks')) {
-        alert('Thanks — your partnership request was sent. Our team will contact you at the email you provided.');
-        partnerForm.reset();
-      }
-    }, 300);
-  });
-}
+<h2>80%+</h2>
 
-  // small animation load (fade in)
-  document.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelectorAll('.animate-grid .card').forEach((el,i)=>{ el.style.transitionDelay = (i*80)+'ms'; el.classList.add('appear'); });
-  });
-  </script>
+<p>of Kenya's workforce is in the informal economy</p>
 
-  <style>
-    /* Minimal styles for drawers (inline so file drop-in works) */
-    .drawer{ position:fixed; inset:0; display:none; background: rgba(2,6,23,0.6); z-index:1000; align-items:center; justify-content:center; padding:20px; }
-    .drawer.open{ display:flex; }
-    .drawer-inner{ width:min(800px,100%); max-height:90vh; overflow:auto; background:#fff; border-radius:12px; padding:20px; position:relative; }
-    .drawer-close{ position:absolute; right:12px; top:12px; background:transparent; border:0; cursor:pointer; font-weight:700; }
-  </style>
+</div>
+
+<div>
+
+<h2>Community First</h2>
+
+<p>Built around trusted social networks</p>
+
+</div>
+
+<div>
+
+<h2>Pilot</h2>
+
+<p>Currently preparing first community pilots</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/community-health.jpg"
+alt="Community healthcare">
+
+</div>
+
+</section>
+
+<!-- PROBLEM -->
+
+<section id="problem" class="problem">
+
+<div class="section-title">
+
+<span>THE CHALLENGE</span>
+
+<h2>
+
+Healthcare emergencies shouldn't begin with fundraising.
+
+</h2>
+
+</div>
+
+<div class="problem-grid">
+
+<div class="problem-card">
+
+<h3>
+
+Families often start from zero.
+
+</h3>
+
+<p>
+
+When illness strikes, many households rely on WhatsApp appeals, church announcements, or emergency contributions to pay hospital bills. Treatment may be delayed while funds are raised.
+
+</p>
+
+</div>
+
+<div class="problem-card">
+
+<h3>
+
+Communities are willing to help.
+
+</h3>
+
+<p>
+
+Across Kenya, people regularly support one another through churches, chamas, SACCOs, and extended families. The willingness already exists.
+
+</p>
+
+</div>
+
+<div class="problem-card">
+
+<h3>
+
+The missing piece is preparedness.
+
+</h3>
+
+<p>
+
+Healthcare financing is often reactive rather than planned. AfyaShare explores how existing community structures can prepare for healthcare before crisis happens.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INSIGHT -->
+
+<section id="solution" class="insight">
+
+<div class="insight-left">
+
+<img src="images/chama-meeting.jpg"
+alt="Community meeting">
+
+</div>
+
+<div class="insight-right">
+
+<span class="section-label">
+
+OUR INSIGHT
+
+</span>
+
+<h2>
+
+Communities already know how to care for one another.
+
+</h2>
+
+<p>
+
+Through conversations with chama members, churches and community leaders, one pattern consistently emerged:
+
+people willingly support members during illness, but healthcare financing remains largely unstructured.
+
+</p>
+
+<p>
+
+Many groups have well-established systems for bereavement support, savings and development projects, yet healthcare often depends on urgent appeals after someone becomes sick.
+
+</p>
+
+<p>
+
+AfyaShare is exploring whether those same trusted community structures can become a sustainable foundation for healthcare preparedness.
+
+</p>
+
+<a href="#partners" class="primary-btn">
+
+Become a Partner
+
+</a>
+
+</div>
+
+</section>
+
+<!-- TRANSITION -->
+
+<section class="transition">
+
+<div class="transition-box">
+
+<h2>
+
+Building on trust that already exists.
+
+</h2>
+
+<p>
+
+AfyaShare doesn't ask communities to change who they are.
+
+We're designing tools that strengthen systems they already trust.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section id="how-it-works" class="how-it-works">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>HOW AFYASHARE WORKS</span>
+
+<h2>
+Preparing for healthcare starts long before someone gets sick.
+</h2>
+
+<p>
+AfyaShare builds on community trust by helping groups prepare together rather than fundraise during emergencies.
+</p>
+
+</div>
+
+<div class="steps">
+
+<div class="step-card">
+
+<div class="step-number">1</div>
+
+<h3>Create a Community Wallet</h3>
+
+<p>
+
+A church, chama, SACCO, employer or extended family establishes a shared health wallet with transparent governance agreed by members.
+
+</p>
+
+</div>
+
+<div class="step-card">
+
+<div class="step-number">2</div>
+
+<h3>Contribute Gradually</h3>
+
+<p>
+
+Members make flexible contributions over time, building a dedicated healthcare fund before emergencies occur.
+
+</p>
+
+</div>
+
+<div class="step-card">
+
+<div class="step-number">3</div>
+
+<h3>Access Care Quickly</h3>
+
+<p>
+
+When a member requires treatment, funds can be accessed without relying on urgent fundraising or delayed community appeals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY COMMUNITIES -->
+
+<section id="communities" class="communities">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>WHY COMMUNITIES?</span>
+
+<h2>
+
+Communities already solve problems together.
+
+</h2>
+
+<p>
+
+Across Africa, trusted social groups regularly organize collective action. AfyaShare builds on those existing relationships instead of creating entirely new systems.
+
+</p>
+
+</div>
+
+<div class="community-grid">
+
+<div class="community-card">
+
+<div class="icon">⛪</div>
+
+<h3>Churches</h3>
+
+<p>
+
+Faith communities already support members during difficult moments and provide trusted local leadership.
+
+</p>
+
+</div>
+
+<div class="community-card">
+
+<div class="icon">🤝</div>
+
+<h3>Chamas</h3>
+
+<p>
+
+Savings groups have established contribution cultures that could extend naturally to healthcare preparedness.
+
+</p>
+
+</div>
+
+<div class="community-card">
+
+<div class="icon">🏢</div>
+
+<h3>Employers</h3>
+
+<p>
+
+Small businesses can strengthen employee wellbeing through community-supported healthcare funds.
+
+</p>
+
+</div>
+
+<div class="community-card">
+
+<div class="icon">👨‍👩‍👧</div>
+
+<h3>Families</h3>
+
+<p>
+
+Extended families already care for one another. AfyaShare helps organize that support before medical emergencies occur.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHO IT'S FOR -->
+
+<section class="beneficiaries">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>WHO IT'S FOR</span>
+
+<h2>
+
+Designed for every community that believes healthcare should be shared.
+
+</h2>
+
+</div>
+
+<div class="beneficiary-grid">
+
+<div class="beneficiary">
+
+<h3>Families</h3>
+
+<p>
+
+Prepare together for unexpected healthcare expenses.
+
+</p>
+
+</div>
+
+<div class="beneficiary">
+
+<h3>Churches</h3>
+
+<p>
+
+Support members through structured healthcare preparedness.
+
+</p>
+
+</div>
+
+<div class="beneficiary">
+
+<h3>Community Groups</h3>
+
+<p>
+
+Strengthen existing welfare systems with dedicated health funds.
+
+</p>
+
+</div>
+
+<div class="beneficiary">
+
+<h3>Hospitals</h3>
+
+<p>
+
+Partner with communities seeking faster access to healthcare financing.
+
+</p>
+
+</div>
+
+<div class="beneficiary">
+
+<h3>Employers</h3>
+
+<p>
+
+Provide an additional layer of financial protection for employees.
+
+</p>
+
+</div>
+
+<div class="beneficiary">
+
+<h3>Diaspora & Donors</h3>
+
+<p>
+
+Support healthcare transparently through trusted community networks.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PARTNERS -->
+
+<section id="partners" class="partners">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>PARTNER WITH US</span>
+
+<h2>
+
+We're preparing our first pilot partnerships.
+
+</h2>
+
+<p>
+
+AfyaShare is currently engaging organizations interested in shaping the future of community healthcare financing.
+
+</p>
+
+</div>
+
+<div class="partner-options">
+
+<div class="partner-card">
+
+<h3>Hospitals & Clinics</h3>
+
+<p>
+
+Explore how community health wallets can support patients seeking timely access to care.
+
+</p>
+
+<a href="#partner-form">
+
+Partner →
+
+</a>
+
+</div>
+
+<div class="partner-card">
+
+<h3>Churches & Faith Communities</h3>
+
+<p>
+
+Help us understand how faith communities currently support members during medical emergencies.
+
+</p>
+
+<a href="#partner-form">
+
+Join Conversations →
+
+</a>
+
+</div>
+
+<div class="partner-card">
+
+<h3>NGOs & Development Partners</h3>
+
+<p>
+
+Collaborate on research, pilot implementation and evidence generation.
+
+</p>
+
+<a href="#partner-form">
+
+Work Together →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WAITLIST -->
+
+<section id="waitlist" class="waitlist">
+
+<div class="container">
+
+<div class="waitlist-box">
+
+<h2>
+
+Join the AfyaShare Pilot Community
+
+</h2>
+
+<p>
+
+We're building our first pilot with communities, healthcare providers and partners across Kenya.
+
+Join our waitlist to receive updates and opportunities to participate.
+
+</p>
+
+<form>
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<select>
+
+<option>
+
+I am interested as...
+
+</option>
+
+<option>
+
+Community Member
+
+</option>
+
+<option>
+
+Church Leader
+
+</option>
+
+<option>
+
+Hospital
+
+</option>
+
+<option>
+
+Employer
+
+</option>
+
+<option>
+
+NGO / Development Partner
+
+</option>
+
+<option>
+
+Research Partner
+
+</option>
+
+</select>
+
+<textarea
+placeholder="Tell us how you'd like to be involved."
+rows="5"></textarea>
+
+<button type="submit">
+
+Join Waitlist
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>FREQUENTLY ASKED QUESTIONS</span>
+
+<h2>
+
+Common Questions
+
+</h2>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Is AfyaShare an insurance company?
+
+</h3>
+
+<p>
+
+No. AfyaShare is developing a community-powered healthcare preparedness model that complements existing healthcare financing systems.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Can AfyaShare replace insurance?
+
+</h3>
+
+<p>
+
+No. Our goal is to improve access to healthcare by helping communities prepare together. Future integration with insurance providers is an important area we intend to explore.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Is AfyaShare already operating?
+
+</h3>
+
+<p>
+
+AfyaShare is currently preparing its first pilot through community research, stakeholder engagement and partnership development.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+
+AfyaShare Africa
+
+</h3>
+
+<p>
+
+Building community-powered healthcare preparedness across Africa.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Explore
+
+</h4>
+
+<ul>
+
+<li><a href="#problem">The Problem</a></li>
+
+<li><a href="#solution">Our Solution</a></li>
+
+<li><a href="#communities">Communities</a></li>
+
+<li><a href="#partners">Partners</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+
+Contact
+
+</h4>
+
+<p>
+
+support@afyashareafrica.com
+
+</p>
+
+<p>
+
+Nairobi, Kenya
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 AfyaShare Africa.
+
+AfyaShare is an early-stage social innovation initiative exploring community-powered healthcare financing.
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
-</html>
 
+</html>
 
 
 
